@@ -22,7 +22,7 @@ def main():
         # Check if the current time is like 17:17 or else
 
         # if current_time.split(":")[0] == current_time.split(":")[1]:
-        if current_time == "17:54":
+        if current_time == now.strftime("%H:%H"):
             send_notification()
 
             # Wait for a minute to avoid multiple notifications in the same minute
